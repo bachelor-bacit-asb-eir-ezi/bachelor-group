@@ -15,6 +15,7 @@ html {
 body {
     background: #081b29;
     color: whitesmoke;
+    font-size: 16px;
 }
 
 .section {
@@ -27,7 +28,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #081b29;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,6 +40,10 @@ body {
     color: whitesmoke;
     text-decoration: none;
     font-weight: 600;
+}
+
+.logo:hover {
+    color: #00abf0;
 }
 
 .navbar a {
@@ -146,8 +151,8 @@ body {
 
 .member {
     display: flex;
-    flex-direction: row-reverse; /* Reverse the order to put the image on the left */
-    align-items: center; /* Vertically align content */
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 .mem-info-container {
@@ -156,7 +161,82 @@ body {
     padding: 20px;
 }
 
+.social-icons a {
+    font-size: 30px;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: purple;
+    min-height: 100px;
+}
+
+/* Media queries for tablet screens */
+@media screen and (max-width: 768px) {
+    .navbar a {
+        margin-left: 15px;
+    }
+
+    .home-content h1 {
+        font-size: 30px; 
+    }
+
+    .home-content h3 {
+        font-size: 20px; 
+    }
+
+    .home-content p {
+        font-size: 16px; 
+    }
+
+    .memberpic {
+        width: 120px; 
+        height: 120px;
+    }
+
+    .mem-info-container {
+        padding: 8px; 
+    }
+}
+
+/* Media queries for phone screens */
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        margin-bottom: 10px; 
+    }
+
+    .home-content h1 {
+        font-size: 24px; 
+    }
+
+    .home-content h3 {
+        font-size: 18px; 
+    }
+
+    .home-content p {
+        font-size: 14px; 
+    }
+
+    .memberpic {
+        width: 100px; 
+        height: 100px;
+    }
+
+    .mem-info-container {
+        padding: 5px;
+    }
+  
 .companies-content{
    padding-left: 10px; 
-
 }

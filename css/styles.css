@@ -137,7 +137,7 @@ body {
 }
 
 .about {
-    height: 100vh;
+    height: auto;
     display: flex;
     padding: 0 10%;
 }
@@ -172,29 +172,6 @@ body {
     text-decoration: none;
     margin-right: 10px;
 }
-
-.companies {
-    height: 150vh;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 10%;
-    flex-direction: row-reverse; 
-  }
-
-  .companies h2 {
-    color: #00abf0;
-  }
-  
-  .company-content {
-    flex: 1;
-  }
-  
-  .company-logo {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
   
  .footer {
     background-color: #081b29;;
